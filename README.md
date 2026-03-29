@@ -1,118 +1,81 @@
-# Stellar Notes DApp
+# 🌌 Stellar Mana: The Future of Game Economy
 
-**Stellar Notes DApp** - Blockchain-Based Decentralized Note-Taking System
-
-## Project Description
-
-Stellar Notes DApp is a decentralized smart contract solution built on the Stellar blockchain using Soroban SDK. It provides a secure, immutable platform for managing personal notes directly on the blockchain. The contract ensures that your data is stored transparently and is only manageable through predefined smart contract functions, eliminating reliance on centralized database providers.
-
-The system allows users to create, view, and delete notes, leveraging the efficiency and security of the Stellar network. Each note is uniquely identified and stored within the contract's instance storage, ensuring data persistence and reliability.
-
-## Project Vision
-
-Our vision is to revolutionize personal productivity in the digital age by:
-
-- **Decentralizing Data**: Moving note-taking from centralized servers to a global, distributed blockchain
-- **Ensuring Ownership**: Empowering users to have complete control and ownership over their digital thoughts and information
-- **Guaranteeing Immutability**: Providing a permanent, tamper-proof record of notes that cannot be altered or deleted by third parties
-- **Enhancing Privacy**: Leveraging blockchain security to protect personal information from unauthorized access
-- **Building Trustless Systems**: Creating a platform where data integrity is guaranteed by code, not by company promises
-
-We envision a future where digital information is truly personal and sovereign, empowering individuals with complete autonomy over their digital assets.
-
-## Key Features
-
-### 1. **Simple Note Creation**
-
-- Create notes with just one function call
-- Specify title and content for each note
-- Automated ID generation for unique identification
-- Persistent storage on the Stellar blockchain
-
-### 2. **Efficient Data Retrieval**
-
-- Fetch all stored notes in a single call
-- Structured data representation for easy frontend integration
-- Quick access to your entire note collection
-- Real-time synchronization with the blockchain state
-
-### 3. **Secure Deletion**
-
-- Remove specific notes using their unique IDs
-- Permanent removal from the contract storage
-- Clean and efficient storage management
-- Immediate update of the note list after deletion
-
-### 4. **Transparency and Security**
-
-- View all note activities on the blockchain
-- Blockchain-based verification of all storage actions
-- Immutable records of note creation and deletion
-- Protected against unauthorized modifications
-
-### 5. **Stellar Network Integration**
-
-- Leverages the high speed and low cost of Stellar
-- Built using the modern Soroban Smart Contract SDK
-- Scalable architecture for growing note collections
-- Interoperable with other Stellar-based services
-
-## Contract Details
-
-- Contract Address: CBLU4IUASQ4WUMOXBFLZRSBBLILGOH33GS4LUPKFBCCCMJCDQNMF7G2M
-  ![alt text](screenshot.png)
-
-## Future Scope
-
-### Short-Term Enhancements
-
-1. **Note Encryption**: Support for end-to-end encryption of note content for enhanced privacy
-2. **Category Management**: Add tags and categories to organize notes efficiently
-3. **Rich Text Support**: Extend support beyond plain text to include Markdown and formatted content
-4. **Search Functionality**: Implement advanced search filters for large note collections
-
-### Medium-Term Development
-
-5. **Collaborative Notes**: Implement multi-signature requirements for shared or collaborative note-taking
-   - Shared access for multiple addresses
-   - Permission-based editing and viewing
-   - Version history tracking
-6. **Notification System**: Off-chain bridge to alert users of new updates or shared notes
-7. **Asset Attachment**: Capability to attach digital assets or tokens to specific notes
-8. **Inter-Contract Integration**: Allow other smart contracts to interact with and store data in the notes contract
-
-### Long-Term Vision
-
-9. **Cross-Chain Synchronization**: Extend note storage to multiple blockchain networks
-10. **Decentralized UI Hosting**: Host the frontend on IPFS or similar decentralized platforms
-11. **AI-Powered Summarization**: Optional integration with AI to help users summarize their notes
-12. **Privacy Layers**: Implement zero-knowledge proofs for completely private note content
-13. **DAO Governance**: Community-driven protocol improvements and feature prioritization
-14. **Identity Management**: Integration with decentralized identity (DID) systems for user management
-
-### Enterprise Features
-
-15. **Corporate Documentation**: Adapt the system for secure corporate record-keeping
-16. **Immutable Logging**: Create time-locked logs for audit purposes
-17. **Automated Reporting**: Automatic note triggers for periodic reporting
-18. **Multi-Language Support**: Expand accessibility with internationalization
+> **Unlock the potential of on-chain gaming with a high-performance, regenerative mana management system built on the Stellar Soroban network.**
 
 ---
 
-## Technical Requirements
+## 💎 Project Overview
 
-- Soroban SDK
-- Rust programming language
-- Stellar blockchain network
+**Stellar Mana** is a decentralized smart contract solution designed to provide a robust infrastructure for game developers who want to integrate on-chain mechanics. Unlike traditional databases where character stats are easily manipulated or siloed, **Stellar Mana** brings the core "mana" mechanic directly onto the blockchain.
 
-## Getting Started
-
-Deploy the smart contract to Stellar's Soroban network and interact with it using the three main functions:
-
-- `create_note()` - Create a new note with a title and content
-- `get_notes()` - Retrieve all stored notes from the contract
-- `delete_note()` - Remove a specific note by its ID
+Every interaction—whether casting a spell, using an ability, or performing a special action—is validated and recorded on the ledger. The contract features an advanced, gas-efficient **Auto-Regeneration Engine** that calculates resource replenishment in real-time without requiring constant transactions. This provides a "seamless" feel while maintaining the security and transparency of decentralized finance.
 
 ---
 
-**Stellar Notes DApp** - Securing Your Thoughts on the Blockchain
+## 🔭 Project Vision
+
+Our vision is to bridge the gap between traditional gaming and the decentralized future. We believe that:
+
+- **True Ownership**: Players should own their progress. By putting mana pools on-chain, we create a path for cross-game character evolution.
+- **Transparency**: No more hidden "nerfs" or "buffs". The rules of regeneration and cost are written in immutable code.
+- **Interoperability**: Imagine a mana pool that can be used across multiple games within the same ecosystem. Stellar Mana is the first step toward a universal game resource protocol.
+- **Ecosystem Growth**: By providing a ready-to-use mana module, we empower indie developers to build complex on-chain games without worrying about the underlying resource logic.
+
+---
+
+## ⚡ Key Features
+
+### 1. 🔄 **Dynamic Auto-Regeneration**
+
+The contract doesn't just store a number; it stores a _timeline_. Mana replenishes automatically based on the time elapsed since the last interaction, following a predefined `regen_rate`.
+
+### 2. 🛡️ **On-Chain Security**
+
+Every mana expenditure requires owner authentication. Your resources are protected by the same cryptographic security as your Stellar assets.
+
+### 3. 📊 **Real-Time Status Tracking**
+
+The `get_status` function provides a comprehensive view of the player's resource state, including current mana, capacity limits, and current regeneration speed.
+
+### 4. 🚀 **High-Speed Execution**
+
+Built on Soroban, the contract leverages the speed and low fees of the Stellar network, making it viable for fast-paced game mechanics that would be too expensive on other chains.
+
+---
+
+## 📜 Deployed Smart Contract Details
+
+| Field           | Value                                                      |
+| :-------------- | :--------------------------------------------------------- |
+| **Network**     | Stellar Testnet / Soroban                                  |
+| **Contract ID** | `CBJLX4F3PQOAT4O4GXGE7ANSS5Z32NUYPSXHBDZNABHJ52AZF75L45CG` |
+| **Status**      | Deployed & Active                                          |
+
+### 🖼️ Explorer Evidence
+
+![Proof of Deployment](screenshot.png)
+
+---
+
+## 🗺️ Future Scope
+
+We are just getting started. The roadmap for **Stellar Mana** includes several groundbreaking features:
+
+1.  **Multi-Resource Pools**: Support for Stamina, Health, and Energy pools within a single contract instance.
+2.  **Item-Based Boosters**: Integration with Stellar NFTs (CEP-46/71) to provide permanent or temporary mana regeneration buffs.
+3.  **Mana-Sharing Protocols**: Allow players to "gift" or "transfer" mana to party members in real-time.
+4.  **Cross-Chain Sync**: Bridging mana pools to other networks while maintaining a master record on Stellar.
+5.  **Advanced Oracle Integration**: Link mana regeneration to real-world events or external data (e.g., specific times of day or weather).
+
+---
+
+## 🛠️ Technical Stack
+
+- **L1 Blockchain**: Stellar
+- **Smart Contract Layer**: Soroban SDK
+- **Language**: Rust
+- **Tools**: Cargo, Soroban CLI
+
+---
+
+© 2026 Stellar Mana Dev Team. Built for the future of on-chain gaming.
